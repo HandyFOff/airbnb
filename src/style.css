@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body, h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.main_container {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+
+}
+
+.logo {
+    padding: 20px 0;
+    margin-left: 36px;
+}
+
+#hero__flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-bg__flex {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-bg {
+    width: 395px;
+    height: 232px;
+    margin: 60px 0 40px 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.hero-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    /* identical to box height, or 40px */
+
+
+    color: #000000;
+
+}
+
+.hero-subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+    width: 320px;
+    
+    
+    color: #222222;
+}
+
+/* CARDS */
+
+.card-img {
+    width:100%;
+    height:auto
+}
+
+.info-rating:nth-child(1)::before {
+    content: url('./img/cards/star.png');
+    position: relative;
+    bottom: -2px;
+    margin-right: 2px;
+}
+
+.gray {
+    color: #918E9B;
+}
+
+.cards {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: none;
+}
+
+.card {
+    position: relative;
+    gap: 5px;
+    font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+   .hero-text {
+    align-items:  center;
+   }
+   .hero-title {
+    font-size: 46px;
+   }
+   .hero-subtitle {
+    font-size: 26px;
+    width: 80%;
+   }
+}
